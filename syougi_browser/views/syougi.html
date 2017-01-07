@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>将棋</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="../static/syougi.css">
+</head>
+<body>
+   <header class="header">
+        <div class="inner cf">
+            <h1 class="logo">naro</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="">リセット</a></li>
+                    <li><a href="">録画</a></li>
+                    <li><a href="">棋譜</a></li>
+                    <li><a href="">ランキング</a></li>
+                    <li><a href="">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <div class="main inner cf">
+       <div class="game">
+           <div class="content">
+               <div class="enemy-hand hand waku">
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+               </div>
+               <div class="field waku">
+                  {% for num in field %}
+                   <div class="masu waku"><img class="koma" src="../static/koma{{ num }}.png" alt="{{ num }}"></div>
+                  {% endfor %}
+               </div>
+               <div class="my-hand hand waku">
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+                   <div class="waku"></div>
+               </div>
+           </div>
+       </div>
+       <div class="kihu">
+           <div class="kihu-header">
+               <div class="kihu-inner">
+                   <div class="text">棋譜</div>
+               </div>
+           </div>
+       </div>
+   </div>    
+</body>
+</html>

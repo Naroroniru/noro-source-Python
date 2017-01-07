@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Verdana, Meiryo, sans-serif;
+}
+
+.cf::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 50px;
+    line-height: 50px;
+    margin: 20px 0px;
+    background-color: darkslategray;
+}
+
+.logo{
+    float: left;
+    font-size: 32px;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-weight: bold;
+    color: white;
+}
+
+.nav{
+    float: right;
+    color: white;
+}
+
+.nav li{
+    float: left;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    opacity: .7;
+}
+
+
+.waku{
+    border: 1px black solid;
+}
+
+.main{
+    height: 1200px;
+    width: 1200px;
+}
+
+.game{
+    height: 800px;
+    width: 800px;
+    float: left;
+}
+
+.content{
+    width: 452px;
+    margin: 0px auto;
+    
+}
+
+.hand{
+    height: 70px;
+    width: 457px;
+    background-color: peru;
+    margin: 10px 0px;
+}
+
+.hand div{
+    height: 68px;
+    width: 65px;
+    float: left;
+}
+
+.field{
+    height: 452px;
+    width: 452px;
+}
+
+.masu{
+    background-color: #CD853F;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.koma{
+    height: 50px;
+    width: 50px;
+}
+
+.kihu{
+    height: 600px;
+    width: 360px;
+    background-color: darkslateblue;
+    float: left;
+    margin: 0px 0px;
+}
+
+.kihu-header{
+    height: 80px;
+    line-height: 80px;
+    background-color: brown;
+}
+
+.kihu-inner{
+    width: 60px;
+    margin: 0px auto;
+}
+
+.text{
+    font-size: 30px;
+    color: white;
+}
